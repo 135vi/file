@@ -2,6 +2,9 @@
 <html lang="en"
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/2cbab40137.js"></script>
     <title>Document</title>
     <style>
          .container-todo{
@@ -38,14 +41,24 @@
          .todo button:hover {
             font-weight: bold;
          }
-         .complete::before {
+         .todo li.complete::before {
+            content: '';
             display: inline-block;
             width: 15px;
             height: 15px;
-            background-image: url();
+            background-image: url("square-check-regular.svg");
             background-repeat: no-repeat;
-            margin-right: 6px;
-         }
+            margin-right: 6px;            
+        }
+        .todo li::before{
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url("square-regular.svg");
+            background-repeat: no-repeat;
+            margin-right: 6px;      
+        }
     </style>
 </head>
 <body>
@@ -53,10 +66,10 @@
         <h1>My todo list</h1>
         <ul class="todo">
             <li>Купить молоко<button class="exit">x</button></li>
-            <li class="complete">Купить хлеб</li>
-            <li>Сделать дз</li>
-            <li class="complete">Помыть посуду</li>
-            <li>Постирать вещи</li>
+            <li class="complete">Купить хлеб<button class="exit">x</button></li>
+            <li>Сделать дз<button class="exit">x</button></li>
+            <li class="complete">Помыть посуду<button class="exit">x</button></li>
+            <li>Постирать вещи<button class="exit">x</button></li>
         </ul>
     </div>
 </body>
