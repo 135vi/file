@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container {
+        max-width: 900px;
+        display: flex;
+        margin: 0 auto;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .feature-box {
+        padding: 15px;
+        min-height: 150px;
+        border-radius: 20px;
+        border: 1px solid black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 20px;
+        display: flex;
+        font-style: initial;
+    }
+    .blue {
+        background: #1e48ec;
+        color: white;
+    }
+    .text-center {
+        text-align: center;
+    }
+</style>
+<body>
+    <h2 class="text-center">Что мы делаем</h2>
+    <h1 class="text-center">Мы готовы поделиться советами и опытом</h1>
+    <div>
+        <div class="flex-container">
+            <div class="feature-box blue">
+                <div>icon</div>
+                <h3>Инвестиции</h3>
+                <p>Sample text. Click to select the Text Element</p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="feature-box">
+                <div>icon</div>
+                <h3>Инвестиции</h3>
+                <p>Sample text. Click to select the Text Element</p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="feature-box">
+                <div>icon</div>
+                <h3>Инвестиции</h3>
+                <p>Sample text. Click to select the Text Element</p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="feature-box blue">
+                <div>icon</div>
+                <h3>Инвестиции</h3>
+                <p>Sample text. Click to select the Text Element</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div>
+            <a href="">Главная</a>
+            <a href="">Контакты</a>
+            <a href="">О нас</a>
+            <a href=""></a>
+        </div>
+    </div>
+</body>
+</html>
